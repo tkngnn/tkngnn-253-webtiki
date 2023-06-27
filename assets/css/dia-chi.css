@@ -1,0 +1,220 @@
+.dia-chi{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.div-unhidden{
+    padding: 5px 0px 0px;
+    color: rgb(51, 51, 51);
+}
+.div-unhidden .title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.div-unhidden .address-list-text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.div-unhidden .address-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px -20px -20px;
+}
+.div-unhidden .address-info{
+    position: relative;
+    flex: 1 0 40%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    border-radius: 3px;
+    border: 1px dashed rgb(0, 153, 0);
+    margin: 0px 0px 20px 20px;
+    max-width: calc(50% - 20px);
+    padding: 10px 15px;
+}
+.div-unhidden .name {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.div-unhidden p {
+    margin: 0px 0px 10px;
+}
+.div-unhidden .name + .address {
+    height: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.div-unhidden .address {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+.div-unhidden .phone {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.div-unhidden .action {
+    margin-bottom: 0px;
+}
+.div-unhidden .action .btn {
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 14px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 2px;
+    outline-color: rgb(204, 204, 204);
+    background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247));
+    height: 31px;
+    font-size: 12px;
+}
+
+.div-unhidden .action .saving-address {
+    margin-right: 7px;
+    border: 1px solid rgb(2, 159, 209);
+    color: rgb(255, 255, 255);
+    background: rgb(0, 182, 240);
+}
+.div-unhidden .action .edit-address, .div-unhidden .action .delete-address {
+    border: 1px solid rgb(204, 204, 204);
+    margin-right: 7px;
+}
+.div-unhidden .default {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+    font-size: 11px;
+    color: rgb(0, 153, 0);
+}
+
+/*  */
+.div-ngan{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.div-ngan span {
+    color: rgb(0, 127, 240);
+    cursor: pointer;
+}
+/*  */
+.hidden-dia-chi{
+    background: rgb(247, 247, 247);
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: none;
+    border-radius: 0px 0px 3px 3px;
+    margin: 0px auto;
+    padding: 10px 15px;
+    transition: max-height 0.5s ease-out 0s;
+    max-height: 650px;
+    overflow: hidden;
+    display: none;
+    transition: max-height 0.5s ease-out;
+}
+.hidden-dia-chi .form-container {
+    max-width: 550px;
+    margin: 0px auto;
+}
+.form-write{
+    font-size: 13px;
+    margin: 0px 0px 15px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(51, 51, 51);
+}
+.form-write > label {
+    font-weight: 700;
+    width: 33.3333%;
+}
+.form-write input, .form-write textarea, .form-write select{
+    width: 66.6666%;
+}
+.form-write textarea {
+    max-width: 366px;
+}
+.form-input-info{
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 34px;
+    outline: none;
+}
+.form-textarea-info{
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    padding: 6px 12px;
+    line-height: 20px;
+    outline: none;
+}
+.form-write .hint {
+    font-size: 11px;
+    font-style: italic;
+}
+.address-check{
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.form-write .add-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+.address-check{
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.add-icon.icon-radio-button-on {
+    background-image: url(../../img/dia-chi/sprite.png);
+    background-position: -304px -87px;
+    width: 24px;
+    height: 24px;
+}
+.add-icon.icon-radio-button-off {
+    background-image: url(../../img/dia-chi/sprite.png);
+    background-position: -304px -116px;
+    width: 24px;
+    height: 24px;
+}
+.address-check input:checked + span .icon-radio-button-on {
+    display: block;
+}
+.address-check input:checked + span .icon-radio-button-off {
+    display: none;
+}
+.form-write .button-group {
+    width: 66.6666%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.form-write .button-group button {
+    flex: 1 0 40%;
+    background: rgb(247, 247, 247);
+    border-color: rgb(225, 225, 225);
+    outline-color: rgb(204, 204, 204);
+    font-size: 13px;
+    padding: 10px 0px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.form-write .button-group .cancel {
+    margin-right: 10px;
+}
+.form-write .button-group .create-update {
+    background: rgb(0, 182, 240);
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki - Mua hàng online giá tốt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/css/thanh-toan.css">
+    <link rel="stylesheet" href="./assets/css/thanh-toan-visa.css">
+    <link rel="stylesheet" href="./assets/css/dia-chi.css">
+    <link rel="stylesheet" href="./assets/css/cutoe.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="shortcut icon"
+        href="https://salt.tikicdn.com/media/upload/2018/12/03/0054c1410e38f1b9f3609c244974dd9c.png"
+        type="image/x-icon" />
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- header -->
+        <div class="header-visa">
+            <div class="visa-container">
+                <div class="logo">
+                    <a href="index.html">
+                       <img src="img/visa/logo.png" alt="" width="80" height="60" class="visa-logo-img">
+                    </a>
+                </div>
+                <div class="hotline">
+                    <a href="#">
+                        <img src="img/dia-chi/hotline (1).png" alt="" width="185" height="56"
+                        class="visa-logo-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- phần div chính -->
+        <main style="background-color: rgb(245, 245, 250);">
+            <div class="dia-chi" style="width: 1170px;">
+                <!-- div hiện -->
+                <div class="div-unhidden">
+                    <h3 class="title">2. Địa chỉ giao hàng</h3>
+                    <h5 class="address-list-text">Chọn địa chỉ giao hàng có sẵn bên dưới:</h5>
+                    <div class="address-list">
+                        <div class="address-info">
+                            <p class="name">Tạ Kiều Ngân</p>
+                            <p class="address" title="">Địa chỉ: 1234 abc phường x quận y TP. Hồ Chí Minh</p>
+                            <p class="address">Việt Nam</p>
+                            <p class="phone">Điện thoại: 0xxxxxxx5</p>
+                            <p class="action">
+                                <a href="thanh-toan.html"><button type="button" class="btn saving-address">Giao đến địa chỉ này</button></a>
+                                
+                                <button type="button" class="btn edit-address" id="unhidden"> Sửa</button>
+                            </p>
+                            <span class="default">Mặc định</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- div p -->
+                <p class="div-ngan">Bạn muốn giao hàng đến địa chỉ khác? 
+                    <span>Thêm địa chỉ giao hàng mới</span>
+                </p>
+                <!-- div ẩn -->
+                <div class="hidden-dia-chi" id="div-change">
+                    <div class="form-container">
+                        <div class="form-write">
+                            <label>Họ tên</label>
+                            <input type="text" name="full_name" placeholder="Nhập họ tên" maxlength="50" class="form-input-info" value="Tạ Kiều Ngân">
+                        </div>
+                        <div class="form-write">
+                            <label>Điện thoại di động</label>
+                            <input type="text" name="telephone" placeholder="Nhập số điện thoại" class="form-input-info" value="0xxxxxxx5">
+                        </div>
+                        <div class="form-write">
+                            <label>Tỉnh/Thành phố</label>
+                            <select name="city" id="city"  class="form-input-info">
+                                    <option value="0">Tỉnh/Thành phố</option>
+                                    <option value="1">An Giang</option>
+                                    <option value="2">Bà Rịa Vũng Tàu</option>
+                                    <option value="3">Bắc Giang</option>
+                                    <option value="4">Bắc Kạn</option>
+                                    <option value="5">Bạc Liêu</option>
+                                    <option value="6">Bắc Ninh</option>
+                                    <option value="7">Bến Tre</option>
+                                    <option value="8">Bình Định</option>
+                                    <option value="9">Bình Dương</option>
+                                    <option value="10">Bình Phước</option>
+                                    <option value="11">Bình Thuận</option>
+                                    <option value="12">Cà Mau</option>
+                                    <option value="13">Cần Thơ</option>
+                                    <option value="14">Cao Bằng</option>
+                                    <option value="15">Đà Nẵng</option>
+                                    <option value="16">Đắk Lắk</option>
+                                    <option value="17">Đắk Nông</option>
+                                    <option value="18">Điện Biên</option>
+                                    <option value="19">Đồng Nai</option>
+                                    <option value="20">Đồng Tháp</option>
+                                    <option value="21">Gia Lai</option>
+                                    <option value="22">Hà Giang</option>
+                                    <option value="23">Hà Nam</option>
+                                    <option value="24">Hà Nội</option>
+                                    <option value="25">Hà Tĩnh</option>
+                                    <option value="26">Hải Dương</option>
+                                    <option value="27">Hải Phòng</option>
+                                    <option value="28">Hậu Giang</option>
+                                    <option value="29">Hòa Bình</option>
+                                    <option value="30">Hưng Yên</option>
+                                    <option value="31">Khánh Hòa</option>
+                                    <option value="32">Kiên Giang</option>
+                                    <option value="33">Kon Tum</option>
+                                    <option value="34">Lai Châu</option>
+                                    <option value="35">Lâm Đồng</option>
+                                    <option value="36">Lạng Sơn</option>
+                                    <option value="37">Lào Cai</option>
+                                    <option value="38">Long An</option>
+                                    <option value="39">Nam Định</option>
+                                    <option value="40">Nghệ An</option>
+                                    <option value="41">Ninh Bình</option>
+                                    <option value="42">Ninh Thuận</option>
+                                    <option value="43">Phú Thọ</option>
+                                    <option value="44">Phú Yên</option>
+                                    <option value="45">Quảng Bình</option>
+                                    <option value="46">Quảng Nam</option>
+                                    <option value="47">Quảng Ngãi</option>
+                                    <option value="48">Quảng Ninh</option>
+                                    <option value="49">Quảng Trị</option>
+                                    <option value="50">Sóc Trăng</option>
+                                    <option value="51">Sơn La</option>
+                                    <option value="52">Tây Ninh</option>
+                                    <option value="53">Thái Bình</option>
+                                    <option value="54">Thái Nguyên</option>
+                                    <option value="55">Thanh Hóa</option>
+                                    <option value="56">Thừa Thiên Huế</option>
+                                    <option value="57">Tiền Giang</option>
+                                    <option value="58">TP Hồ Chí Minh</option>
+                                    <option value="59">Trà Vinh</option>
+                                    <option value="60">Tuyên Quang</option>
+                                    <option value="61">Vĩnh Long</option>
+                                    <option value="62">Vĩnh Phúc</option>
+                                    <option value="63">Vĩnh Phúc</option>    
+                            </select>
+                        </div>
+                        <div class="form-write">
+                            <label>Quận/Huyện</label>
+                            <select name="city" id="city"  class="form-input-info">
+                                    <option value="0">Quận/Huyện</option>
+                                    <option value="1">  Quận 1</option>
+                                    <option value="2">Quận 2</option>
+                                    <option value="3">Quận 3</option>
+                                    <option value="4">Quận 4</option>
+                                    <option value="5">Quận 5</option>
+                                    <option value="6">Quận 6</option>
+                                    <option value="7">Quận 7</option>
+                                    <option value="8">Quận 8</option>              
+                            </select>
+                        </div>
+                        <div class="form-write">
+                            <label>Phường/Xã</label>
+                            <select name="city" id="city"  class="form-input-info">
+                                    <option value="0">Quận/Huyện</option>
+                                    <option value="1">Phường 1</option>
+                                    <option value="2">Phường 2</option>
+                                    <option value="3">Phường 3</option>
+                                    <option value="4">Phường 4</option>
+                                    <option value="5">Phường 5</option>
+                                    <option value="6">Phường 6</option>
+                                    <option value="7">Phường 7</option>
+                                    <option value="8">Phường 8</option>     
+                                    <option value="9">Phường 9</option>
+                                    <option value="10">Phường 10</option>
+                                    <option value="11">Phường 11</option>
+                                    <option value="12">Phường 12</option>
+                                    <option value="13">Phường 13</option>
+                                    <option value="14">Phường 14</option>
+                                    <option value="15">Phường 15</option>
+                                    <option value="16">Phường 16</option>
+                            </select>
+                        </div>
+                        <div class="form-write">
+                            <label>Địa chỉ</label>
+                            <textarea type="textarea" name="street" placeholder="Ví dụ: 52, đường Trần Hưng Đạo" class="form-input-info form-textarea-info"></textarea>
+                        </div>
+                        <div class="form-write">
+                            <label></label>
+                            <span class="hint">Để nhận hàng thuận tiện hơn, bạn vui lòng cho Tiki biết loại địa chỉ.</span>
+                        </div>
+                        <div class="form-write">
+                            <label style="padding-top: 0px;">Loại địa chỉ</label>
+                            <span>
+                                <label style="cursor: pointer; margin-right: 30px; font-size: 12px;">
+                                    <label class="address-check" style="margin-top: -4px;">
+                                        <input name="delivery_address_type" type="radio" value="home" style="display: none;">
+                                        <span>
+                                            <i class="add-icon icon-radio-button-on" style="display: block;"></i>
+                                            <i class="add-icon icon-radio-button-off" style="display: none;"></i>
+                                        </span>
+                                    </label> Nhà riêng / Chung cư
+                                </label>
+                                <label style="cursor: pointer; font-size: 12px;">
+                                    <label class="address-check" style="margin-top: -4px;">
+                                        <input name="delivery_address_type" type="radio" value="company" style="display: none;">
+                                        <span>
+                                            <i class="add-icon icon-radio-button-on" style="display: none"></i>
+                                            <i class="add-icon icon-radio-button-off" style="display: block;"></i>
+                                        </span>
+                                    </label> Cơ quan / Công ty
+                                </label>
+                            </span>
+                        </div>
+                        <div class="form-write" style="margin-bottom: 0px;">
+                            <label></label>
+                            <div class="button-group">
+                                <button class="cancel" id="hidden">Huỷ bỏ</button>
+                                <button class="create-update" id="hidden-up">Cập nhật</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="visa-footer">
+            <div class="footer-footer">
+                <p class="terms-text">Bằng việc tiến hành Đặt Mua, bạn đồng ý với các Điều kiện Giao dịch chung:</p>
+                <p class="terms">
+                    <a href="#" target="_blank">Quy chế hoạt động</a>
+                    <i></i>
+                    <a href="#" target="_blank">Chính sách giải quyết khiếu nại</a>
+                    <i></i>
+                    <a href="#" target="_blank">Chính sách bảo hành</a>
+                    <i></i>
+                    <a href="#" target="_blank">Chính sách bảo mật thanh toán</a>
+                    <i></i>
+                    <a href="#" target="_blank">Chính sách bảo mật thông tin cá nhân</a>
+                </p>
+                <p class="copyright">© 2019 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn</p>
+            </div>
+        </footer>
+
+         <!-- cái cục chat tiki cutoe hột moe nè -->
+         <div class="open-button" onclick="openForm()">
+            <img src="img/chat-tiki.png" alt="" width="100%">
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <div>
+                <div class="tiki-chat" style="background: rgb(245, 245, 250);">
+                    <div class="tiki-chat-gpt">
+                        <div class="tiki-chat-header">
+                            <div class="tiki-header-1">Tiki ChatGPT</div>
+                            <div class="tiki-header-2"></div>
+                            <div class="tiki-header-3">
+                                <div class="tiki--share--" style="margin-right: 10px;">
+                                    <img src="img/cutoe/share.svg" alt="" style="width: 22; height: 22;">
+                                </div>
+                                <div class="tiki--close" onclick="closeForm()" id="tiki--close">
+                                    <img src="img/cutoe/x-lg.svg" alt="" style="width: 22; height: 22;">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chatgpt-infinity" class="chatgpt-infinity">
+                            <div class="chatgpt-message-item">
+                                <div class="">
+                                    <div class="chat-gpt-0">
+                                        <div class="chat-gpt-00">
+                                            <div class="chat-gpt-img">
+                                                <img src="img/cutoe/1.png" alt="Bot" width="24" height="24">
+                                            </div>
+                                            <div class="chat-got-text">
+                                                <div class="chat-gpt-text-text">
+                                                    <p>Xin chào! Mình là trợ lý của bạn tại Tiki, mình sẵn sàng hỗ trợ và trả lời mọi thắc mắc của bạn. Bạn có cần mình giúp gì không?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div id="chatgpt-messages-input" class="chatgpt-messages-input">
+                            <div class="chat-gpt-input">
+                                <div class="chat-gpt-input-input">
+                                    <textarea placeholder="Nhập nội dung chat" rows="1" id="input-chat" class="input-textarea-chat" style="height: 39.6px !important;"></textarea>
+                                    <div id="input-chat-send" class="input-chat-send">
+                                        <img src="img/cutoe/send.svg" alt="" width="20" height="20">
+                                    </div>
+                                </div>
+                                <div class="about-us">Tích hợp ChatGPT, có thể không đúng. Vui lòng kiểm tra lại.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./Javascript/dia-chi.js"></script>
+    <script src="./Javascript/cutoe.js"></script>
+</body>
+
+</html>

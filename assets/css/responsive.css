@@ -1,0 +1,161 @@
+
+@media (max-width: 63.9375em) {
+
+    .main {
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .header-mobile {
+        display: block;
+    }
+
+    .hide-table-mobile {
+        display: none;
+    }
+
+    .navigation-content {
+        display: none;
+    }
+
+    .header__top--logo {
+        display: none;
+    }
+
+    .header__top--category {
+        display: none;
+    }
+
+    .button__header {
+        display: none;
+    }
+
+    .header__category--app {
+        display: none;
+    }
+
+    .header__bottom--sell {
+        display: none;
+    }
+
+    .user__header--top {
+        display: none;
+    }
+
+    .cart-haeder-name {
+        display: none;
+    }
+
+    .cart-header-o {
+        display: none;
+    }
+
+    .header__top {
+        display: none;
+    }
+
+    .header__bottom--logo {
+        display: none;
+    }
+
+    .container-banner {
+        display: none;
+    }
+
+    .category-responsive {
+        display: grid;
+        overflow-x: auto;
+    } 
+
+    .category-responsive::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main {
+        overflow-x: auto;
+    }
+
+    .suggestions-main::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main-js  {
+        overflow-x: auto;
+    }
+    
+    .suggestions-main-js::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main-js-two {
+        overflow-x: auto;
+    }
+
+    .suggestions-main-js-two::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main-js-three {
+        overflow-x: auto;
+    }
+
+    .suggestions-main-js-three::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main-js-deal {
+        overflow-x: auto;
+    }
+
+    .suggestions-main-js-deal::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main-js-cheap {
+        overflow-x: auto;
+    }
+
+    .suggestions-main-js-cheap::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main-js-sale {
+        overflow-x: auto;
+    }
+
+    .suggestions-main-js-sale::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main-js-new {
+        overflow-x: auto;
+    }
+
+    .suggestions-main-js-new::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestions-main-js-trend {
+        overflow-x: auto;
+    }
+
+    .suggestions-main-js-trend::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header {
+        background-color: #0d3ada;
+    }
+
+    .slider {
+        margin: 0;
+        background-color: #0d3ada;
+    }
+
+    .product-shock {
+        background-color: #0d3ada;
+        padding: 10px 0;
+    }
+    
+}
