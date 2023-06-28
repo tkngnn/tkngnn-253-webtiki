@@ -2011,3 +2011,34 @@ b, strong {
 .dowload-img {
     width: 100%;
 }
+
+
+.motasp .gradient {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+.ToggleContent__View .btn-more {
+    cursor: pointer;
+    display: block;
+    width: 229px;
+    height: 39px;
+    margin: 10px auto 0px;
+    color: rgb(24, 158, 255);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: center;
+    border: 1px solid rgb(24, 158, 255);
+    border-radius: 4px;
+    text-decoration: none;
+}
+.ToggleContent__View .btn-more:hover{
+    color: white;
+    background-color: rgb(24, 158, 255);
+}
+#more {display: none;}
