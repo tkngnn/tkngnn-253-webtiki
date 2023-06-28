@@ -258,8 +258,13 @@
                         </div>
                         <div class="user__login">
                             <span class="register__header">Đăng Nhập / Đăng Ký</span>
-                            <span class="account__header">Tài khoản
-                                <i style="margin-left: 4px;" class="fas fa-sort-down"></i>
+                            <span class="account__header">
+                                <button class="dropbtn">Tài Khoản <i style="margin-left: 4px;" class="fas fa-sort-down"></i></button>
+                                    <div class="dropdown-content">
+                                        <a href="trang-user.html">Thông tin tài khoản</a>
+                                        <a href="don-hang.html">Đơn hàng của tôi</a>
+                                        <a href="#">Đăng xuất</a>
+                                    </div>
                             </span>
                         </div>
                     </div>
@@ -8224,6 +8229,155 @@
                 </div>
             </div>
         </div>
+
+         <!-- khung đăng nhập đăng ký -->
+         <div class="document-login">
+            <form class="form-document-login" action="">
+                <div class="document-close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="document-login-use">
+                    <h3 class="document-title">Xin chào,</h3>
+                    <p class="document-selection">Đăng nhập hoặc Tạo tài khoản</p>
+                    <div class="document-input">
+                        <input type="text" placeholder="Số điện thoại" class="document-input-phone" required>
+                    </div>
+                    <div class="document-button">
+                        <button class="document-continue">Tiếp Tục</button>
+                    </div>
+                    <li class="document-gmail">Đăng nhập bằng email</li>
+                    <p class="document-communication">Hoặc tiếp tục bằng</p>
+                    <div class="social-network">
+                        <a href="">
+                            <img src="./assets/login/facebook.png" alt="" class="social-network-img">
+                            <img src="./assets/login/google.png" alt="" class="social-network-img">
+                            <img src="./assets/login/zalo.png" alt="" class="social-network-img">
+                        </a>
+                    </div>
+                    <p class="rules">Bằng việc tiếp tục, bạn đã chấp nhận
+                        <a href="" class="rules-title">điều khoản sử dụng</a>
+                    </p>
+                </div>
+                <div class="login-phone">
+                    <div>
+                        <p class="login-phone-left"><i class="fas fa-chevron-left"></i></p>
+                    </div>
+                    <p class="login-phone-or">Đăng nhập bằng email</p>
+                    <p class="login-phone-tiki">Nhập email và mật khẩu tài khoản Tiki</p>
+                    <input class="login-phone-input" type="email" placeholder="abc@gmail.com" required>
+                    <input class="login-phone-input" type="password" placeholder="Mật khẩu" required>
+                    <button class="login-phone-button">Đăng Nhập</button>
+                    <span class="forget-password">Quên mật khẩu?</span>
+                    <span class="no-account">Chưa có tài khoản?
+                        <p class="no-account-item">Tạo tài khoản</p>
+                    </span>
+                </div>
+                <div class="forgot-box">
+                    <div>
+                        <p class="icon-left-forgot"><i class="fas fa-chevron-left"></i></p>
+                    </div>
+                    <h3 class="forgot-box-title">Quên mật khẩu ?</h3>
+                    <input type="text" placeholder="Số điện thoại/ Email" class="phone-email" required>
+                    <button class="recover">Lấy lại mật khẩu</button>
+                </div>
+                <div class="create-login">
+                    <div>
+                        <p class="icon-left-create"><i class="fas fa-chevron-left"></i></p>
+                    </div>
+                    <h3 class="create-title">Tạo tài khoản</h3>
+                    <p class="please-create">Vui lòng nhập số điện thoại</p>
+                    <input type="tel" placeholder="Số điện thoại" required class="create-btn">
+                    <button class="next-create">Tiếp Tục</button>
+                </div>
+                <div class="document-login-content">
+                    <img src="./assets/login/25b2ccba8f33a5157f161b6a50f64a60.png" alt="" class="content-img">
+                    <div class="content-title">
+                        <h4 class="content-title-item">Mua sắm tại Tiki</h4>
+                        <span class="content-title-link">Siêu ưu đãi mỗi ngày</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Khung menu mobile -->
+        <div class="overlay-mobile-menu">
+            <div class="mobile__menu--box-list">
+                <a href="" class="menu-login">
+                    <i class="fas fa-user fa-user-menu"></i>
+                    <div class="avatar__content">
+                        <div class="avatar-name">Đăng nhập</div>
+                        <div class="avatar__email">Nhận nhiều ưu đãi hơn</div>
+                    </div>
+
+                </a>
+                <div class="avatar-close">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <ul class="content-menu">
+                    <li class="content-menu-item"><a href="" class="content-menu-link">
+                            <i class="fas fa-home fas-icon-menu"></i>
+                            Trang chủ</a></li>
+                    <li class="content-menu-item"><a href="" class="content-menu-link">
+                            <i class="fas fa-bars fas-icon-menu"></i>
+                            Danh sách ngành hàng</a></li>
+                    <li class="content-menu-item"><a href="trang-user.html" class="content-menu-link">
+                            <i class="fas fa-user fas-icon-menu"></i>
+                            Quản lý tài khoản</a></li>
+                    <li class="content-menu-item"><a href="don-hang.html" class="content-menu-link">
+                            <i class="fas fa-user fas-icon-menu"></i>
+                            Đơn hàng của tôi</a></li>
+                    <li class="content-menu-item"><a href="" class="content-menu-link">
+                            <i class="fas fa-bell fas-icon-menu"></i>
+                            Thông báo</a></li>
+                </ul>
+                <div class="sub-head">
+                    KHUYẾN MÃI HOT
+                </div>
+                <ul class="deal-menu-item">
+                    <li class="deal-menu-link">Tiki Deal</li>
+                    <li class="deal-menu-link">Phiếu quà tặng</li>
+                    <li class="deal-menu-link">Ưu đãi cho chủ thẻ ngân hàng</li>
+                </ul>
+                <div class="sub-head">
+                    HỔ TRỢ
+                </div>
+                <ul class="deal-menu-item">
+                    <li class="deal-menu-link">HOTLINE: 1900 - 6035 (1000đ/phút)</li>
+                    <li class="deal-menu-link">Hỗ trợ khách hàng</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Khung đăng nhập đăng ký -->
+        <div class="login-gmail">
+            <div class="back-home-mobile">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="login-banner">
+                <img src="./assets/img/footer/676e3133ef73cd4215edab2f16a96063-login.png" alt=""
+                    class="login-banner-img">
+            </div>
+            <div class="steps-login">
+                <h3 class="login-banner-title">Xin chào,</h3>
+                <p class="login-of">Đăng nhập hoặc Tạo tài khoản</p>
+                <input type="text" class="input-of-emai" placeholder="Số điện thoại">
+                <button class="button-of-next">Tiếp Tục</button>
+                <a href="" class="login-equal">Đăng nhập bằng email</a>
+            </div>
+            <div class="login-or">
+                <span class="login-or-title">Hoặc tiếp tục bằng</span>
+                <div class="social-network">
+                    <img src="./assets/img/footer/facebook-5c2b91f593e76ce4dedd85273e5a152b.png" alt=""
+                        class="social-network-img">
+                    <img src="./assets/img/footer/google-407938979ce5af2e22251cd979bf5e9f.png" alt=""
+                        class="social-network-img">
+                    <img src="./assets/img/footer/zalo-823e0146e9388046fa6efb442fb1bd1f.png" alt=""
+                        class="social-network-img">
+                </div>
+                <div class="accept">Bằng việc tiếp tục, bạn đã chấp nhận điều khoản sử dụng</div>
+            </div>
+        </div>
+        
 
         <!-- cái cục chat tiki cutoe hột moe nè -->
         <div class="open-button" onclick="openForm()">

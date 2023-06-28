@@ -576,6 +576,7 @@ var container = {
 
     },
 
+    
     start: function () {
         this.showInput();
         this.showHistoryBtn();
